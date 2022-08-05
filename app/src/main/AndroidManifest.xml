@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.practica_examen_final">
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica_Examen_Final"
         tools:targetApi="31">
+        <activity
+            android:name=".Principal"
+            android:exported="false"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.Practica_Examen_Final.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
